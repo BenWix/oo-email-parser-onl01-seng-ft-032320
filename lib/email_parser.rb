@@ -14,12 +14,12 @@ class EmailAddressParser
  
   
   def parse 
-    @addresses = @string.split(/[ ,]/)
+    @addresses = @string.split(/[ ,]/).uniq
   end 
   
   
 end 
 
 list = "soemthing@gmail.com thenthis@yahoo.com andonemore@another.org"
-binding.pry 
+#binding.pry 
 

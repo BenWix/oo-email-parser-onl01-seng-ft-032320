@@ -7,21 +7,16 @@ require 'pry'
 
 class EmailAddressParser
   
-  def initialize 
-    
+  def initialize(string) 
+    @string = string   
   end 
   
-  def self.new(string)
-    @string = string
-  end 
+ 
   
   def parse 
     @addresses = @string.split(/[ ,]/)
   end 
   
-  def tester 
-    puts "This is a test"
-  end 
   
 end 
 
